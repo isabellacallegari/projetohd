@@ -124,8 +124,19 @@ ul, ol {
     padding: var(--spacing-lg);
 }
 
+.moto-item h3 {
+    font-size: 3vmin;
+}
+
+.moto-item p {
+    width: 70%;
+    text-wrap: balance;
+    line-height: 1.6;
+}
+
 .grid-motos {
-     width: 1005;
+     width: 90%;
+     margin: auto;
      display: flex;
      flex-wrap: wrap;
      justify-content: space-evenly;
@@ -140,14 +151,53 @@ ul, ol {
     border-radius: 15px; 
     padding: var(--spacing-lg);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    transition: 0.5s;
+    animation: viewAnimation both;
+    animation-timeline: view(70% 20%);
 }
 
+.moto-item:hover{
+    scale: 1.1;
+       
+}
 .moto-item img{
     width: 70%;
     border-radius: 15px;
 }
 
+/* animação para os cards */
+@keyframes viewAnimation {
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
 
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 .container {
     min-height: 100vh;
+}
+
+/* design responsivo/tem que se adaptar nas telas */
+@media(width <= 950px){
+    .moto-item{
+        width: 45%;
+    }
+}
+
+@media(width <=650px){
+
+    .moto-item{
+        width: 90%;
+    }
+
+
 }
