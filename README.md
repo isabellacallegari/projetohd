@@ -4,7 +4,7 @@
 
 **Estrutura do projeto:**
 
-  A organização dos arquivos foi feita com base em boas práticas de estruturação no GitHub para garantir clareza e fácil navegação:
+  A organização dos arquivos foi feita com base em boas práticas de estruturação para garantir clareza e fácil navegação:
   
 **HTML**: Arquivo principal de entrada da aplicação, contendo a estrutura base do site.
 
